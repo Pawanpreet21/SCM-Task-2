@@ -1,10 +1,9 @@
 function showSurvey(event) {
-    event.preventDefault(); // Prevent form submission for now
+    event.preventDefault(); 
 
-    console.log('Function called'); // Log to check if the function is being called
+    console.log('Function called'); 
     var email = document.getElementById('accessEmail').value;
 
-    // Basic email validation
     if (/^\S+@\S+\.\S+$/.test(email)) {
         console.log('Valid email'); // Log if email is valid
         localStorage.setItem('userEmail', email);
@@ -19,14 +18,11 @@ function submitSurvey(event) {
     
     event.preventDefault();
     var userEmail = localStorage.getItem('userEmail');
-    // Create a message to display
     var message = "Thanks! Your response has been submitted. Your email: " + userEmail;
 
-    // Display the message
     alert(message);
 }
 
-// On the survey page, retrieve and display the entered email
 var userEmail = localStorage.getItem('userEmail');
 if (userEmail) {
     document.getElementById('userEmail').textContent = userEmail;
