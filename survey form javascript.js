@@ -15,15 +15,10 @@ function showSurvey(event) {
     }
 }
 
-
-// Function to handle survey form submission
 function submitSurvey(event) {
-    // Prevent form submission
+    
     event.preventDefault();
-
-    // Get the user's email from local storage
     var userEmail = localStorage.getItem('userEmail');
-
     // Create a message to display
     var message = "Thanks! Your response has been submitted. Your email: " + userEmail;
 
