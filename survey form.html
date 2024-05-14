@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- External stylesheet for styling -->
+    <link rel="stylesheet" type="text/css" href="survey form css.css">
+    
+    <!-- Internal CSS for specific styles -->
+    <style>
+        /* Styling for labels within the survey-container */
+        .survey-container label {
+            font-weight: bold;
+        }
+        /* Styling for labels within the radio-options class */
+        .radio-options label {
+            display: inline;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for the survey form -->
+    <div class="survey-container">
+        <!-- Heading for the survey form -->
+        <h1>University Survey Form - FOR FRESHERS 2023</h1>
+        <form id="surveyForm" onsubmit="submitSurvey(event)">
+            <!-- Input field for the user's name -->
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" required>
+
+            <!-- Input field for the group number (accepts only alphabets) -->
+            <label for="group"><strong>Group Number:</strong></label>
+            <input type="text" id="group" name="group"  pattern="[0-9]+" required>
+
+            <!-- Input field for the roll number (accepts only alphabets) -->
+            <label for="roll"><strong>Roll Number:</strong></label>
+            <input type="text" id="roll" name="roll"  pattern="[0-9]+" required>
+
+            <!-- Input field for the user's email -->
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email"  pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+
+            <!-- Input field for the user's phone number (accepts only numbers) -->
+            <label for="phone"><strong>Phone Number:</strong></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"  required>
+
+            <!-- Input field for the user's branch (accepts only numbers) -->
+            <label for="branch"><strong>Branch:</strong></label>
+            <input type="text" id="branch" name="branch" pattern="[A-Za-z]+" required>
+
+            <!-- Radio buttons for rating university's infrastructure -->
+            <label for="infrastructure"><strong>University's Infrastructure:</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="awesome" name="infrastructure" value="Awesome" required>
+                <label for="awesome">Awesome</label>
+
+                <input type="radio" id="good" name="infrastructure" value="Good" required>
+                <label for="good">Good</label>
+
+                <input type="radio" id="not-good" name="infrastructure" value="Not good" required>
+                <label for="not-good">Not good</label>
+            </div>
+
+            <!-- Radio buttons for rating academic curriculum -->
+            <label for="curriculum"><strong>Academic Curriculum:</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="satisfied" name="curriculum" value="Satisfied" required>
+                <label for="satisfied">Satisfied</label>
+
+                <input type="radio" id="not-satisfied" name="curriculum" value="Not Satisfied" required>
+                <label for="not-satisfied">Not Satisfied</label>
+            </div>
+
+            <!-- Radio buttons for rating teaching style -->
+            <label for="teaching-style"><strong>Describe teaching style of faculty members:</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="outstanding" name="teaching-style" value="Outstanding" required>
+                <label for="outstanding">Outstanding</label>
+
+                <input type= "radio" id="very-good" name="teaching-style" value="Very Good" required>
+                <label for="very-good">Very Good</label>
+
+                <input type="radio" id="fair" name="teaching-style" value="Fair" required>
+                <label for="fair">Fair</label>
+
+                <input type="radio" id="not-good" name="teaching-style" value="Not Good" required>
+                <label for="not-good">Not Good</label>
+            </div>
+
+            <!-- Radio buttons for liking or disliking sports and cultural activities -->
+            <label for="sports-activities"><strong>Do you like university's sports & cultural activities?</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="yes-sports" name="sports-activities" value="Yes" required>
+                <label for="yes-sports">Yes</label>
+
+                <input type="radio" id="no-sports" name="sports-activities" value="No" required>
+                <label for="no-sports">No</label>
+            </div>
+
+            <!-- Radio buttons for rating research and innovation facilities -->
+            <label for="research-facilities"><strong>What about university's research and innovation facilities?</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="awesome-research" name="research-facilities" value="Awesome" required>
+                <label for="awesome-research">Awesome</label>
+
+                <input type="radio" id="good-research" name="research-facilities" value="Good" required>
+                <label for="good-research">Good</label>
+
+                <input type="radio" id="bad-research" name="research-facilities" value="Bad" required>
+                <label for="bad-research">Bad</label>
+            </div>
+            
+            <!-- Radio buttons for rating the overall environment -->
+            <label for="overall-environment"><strong>University's Overall Environment:</strong></label>
+            <div class="radio-options">
+                <input type="radio" id="satisfied-environment" name="overall-environment" value="Satisfied" required>
+                <label for="satisfied-environment">Satisfied</label>
+
+                <input type="radio" id="not-satisfied-environment" name="overall-environment" value="Not Satisfied" required>
+                <label for="not-satisfied-environment">Not Satisfied</label>
+            </div>
+
+            <!-- Text area for suggestions or complaints with character limit -->
+            <label for="suggestions-complaints"><strong>Any Suggestions or Complaints (100 words limit):</strong></label>
+            <textarea id="suggestions-complaints" name="suggestions-complaints" rows="4" maxlength="100"></textarea>
+
+            <!-- Submit button to submit the form -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+	<script src="survey form javascript.js"></script>
+</body>
+</html>
