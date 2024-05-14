@@ -1,7 +1,17 @@
 * SURVEY FORM
 
 
-This repository contains the HTML, CSS, and JavaScript code for a simple survey form. The form is designed to be responsive and adapt to different screen sizes.
+This repository contains the HTML, CSS, and JavaScript code for a university survey form specifically designed for freshers. The form is intended to gather information about new students' backgrounds, interests, and expectations, in order to better support their transition to university life.
+
+
+* Project Description
+  
+The survey form includes various input elements such as text fields, email fields, number fields, a dropdown menu, a textarea, and a submit button. The form is designed to be user-friendly and easy to use, with clear labels and error messages for invalid input.
+
+The survey form includes questions about the student's personal information, academic background, extracurricular activities, and career goals. The form also includes questions about the student's expectations for university life and any concerns they may have.
+
+The survey form is designed to be responsive and adapt to different screen sizes, making it accessible to students on a variety of devices.
+
 
 * HTML
 
