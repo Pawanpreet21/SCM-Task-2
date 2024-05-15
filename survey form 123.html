@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- External stylesheet for styling -->
+    <link rel="stylesheet" type="text/css" href="survey form css.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            background: url("https://www.kaumimarg.com/images/news/full20658.jpg?v=210424195251") center center no-repeat;
+            background-size: cover;
+        }
+        .content-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .content-container h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content container with email input -->
+    <div class="content-container">
+        <h1>Welcome to the Chitkara University Survey</h1>
+        <!-- Add your other content here -->
+        <form id="emailForm" onsubmit="showSurvey(event)">
+            <label for="accessEmail">Email:</label>
+            <input type="email" id="accessEmail" name="accessEmail" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="survey form javascript.js"></script>
+</body>
+</html>
+
+
