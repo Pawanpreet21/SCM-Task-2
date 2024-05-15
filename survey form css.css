@@ -4,25 +4,25 @@ body {
 	background: url('https://hellotricity.in/wp-content/uploads/2020/09/Campus-Pic-2-1210x642.jpg') center center no-repeat;
     background-size: cover;
     background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-.survey-container {
-    background-color: #fff;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
+    margin: 0;                                  
+    padding: 0;                 
+}      
+    
+.survey-container {        
+    background-color: #fff;               
+    background-position: center center;          
+    background-repeat: no-repeat;         
+    background-size: cover;           
+    max-width: 400px;        
+    margin: 20px auto;          
+    padding: 20px;           
+    border-radius: 5px;                     
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);           
+}    
+  
 h1 {
     text-align: center;
-    color: red;
+    color: blue;
 }
 
 form {
@@ -31,7 +31,7 @@ form {
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* Styles for various input elements */
@@ -42,7 +42,7 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 7px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -79,7 +79,7 @@ button:hover {
     }
 
     form {
-        padding: 10px;
+        padding: 15px;
     }
 
     input[type="text"],
@@ -87,14 +87,19 @@ button:hover {
     input[type="number"],
     select,
     textarea {
-        padding: 8px;
+        padding: 9px;
     }
 
     textarea {
-        padding: 8px;
+        padding: 9px;
     }
 
     button {
-        padding: 8px;
+        padding: 9px;
     }
 }
+                                                                                                                                                                                                                                                               
+
+
+
+        
