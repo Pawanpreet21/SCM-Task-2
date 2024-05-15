@@ -29,7 +29,7 @@ The CSS file (styles.css) contains the styling for the survey form. It includes 
 6. The input[type="text"], input[type="email"], input[type="number"], select, and textarea selectors set the styles for the various input elements. They include a width of 100%, padding, margin, and a border. The border radius is set to 3px.
 7.The textarea selector sets the styles for the textarea input element. It includes a resize property set to vertical, which allows the user to resize the textarea vertically but not horizontally.
 8. The button selector sets the styles for the submit button. It includes a background color of blue (#007BFF), white text, and no border. The padding and margin are set, and the border radius is set to 3px. The cursor is set to a pointer when hovering over the button.
-9. The button:hover selector sets the styles for the submit button when the user hovers over it. It includes a background color of a darker blue (#0056b3).
+
 
 
 * JAVASCRIPT
