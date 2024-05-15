@@ -15,7 +15,9 @@ function showSurvey(event) {
 }
 
 function submitSurvey(event) {
-    
+
+
+
     event.preventDefault();
     var userEmail = localStorage.getItem('userEmail');
     var message = "Thanks! Your response has been submitted. Your email: " + userEmail;
@@ -27,7 +29,7 @@ var userEmail = localStorage.getItem('userEmail');
 if (userEmail) {
     document.getElementById('userEmail').textContent = userEmail;
 }
-    
+          
     
           
      
@@ -39,4 +41,6 @@ if (userEmail) {
      
      
       
+    
+
     
